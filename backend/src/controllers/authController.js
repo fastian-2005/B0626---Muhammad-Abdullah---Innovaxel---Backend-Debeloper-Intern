@@ -86,4 +86,8 @@ const signin = async(req,res) => {
     }
 }
 
-module.exports = {signin, signup}
+const me = async(req,res) => {
+    return res.status(200).json({body:req.user})
+}
+
+module.exports = {signin, signup, me}

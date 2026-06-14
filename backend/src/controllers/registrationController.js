@@ -90,5 +90,16 @@ const cancelRegistration= async(req,res) =>{
 
 }
 
+const getRegisteredEvents = async(req,res) => {
+    const user_id = req.user.id
+    db.all(`SELECT events.id,events.event_name,events.total_seats,events.event_date FROM events LEFT JOIN registrations on events.id = registrations.event_id WHERE registrations.user_id = ? `,[user_id],async function(err,rows){
+        if (err)
+        {
+            return res.status(500).json({message: 'Database error'})   
+        }
+        return res.status(200).json({body:rows})
+})
+}
 
-module.exports = {registerUser,cancelRegistration}
+
+module.exports = {registerUser,cancelRegistration,getRegisteredEvents}
