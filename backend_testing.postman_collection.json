@@ -1,0 +1,778 @@
+{
+  "info": {
+    "_postman_id": "b1275410-b1c7-4705-9521-eb780b1a0fb9",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53186029",
+    "_collection_link": "https://go.postman.co/collection/53186029-b1275410-b1c7-4705-9521-eb780b1a0fb9?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Signup failure",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"test@example.com\",\r\n    \"password\" :\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Signin Sucess",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"test@example.com\",\r\n    \"password\" :\"Aa123456$\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/signin",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "signin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Signup Success",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"test@example.com\",\r\n    \"password\" :\"Aa123456$\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Signin fail email",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"tst@example.com\",\r\n    \"password\" :\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/signin",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "signin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Signin fail password",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"test@example.com\",\r\n    \"password\" :\"12345\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/signin",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "signin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Event",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_name\": \"Tech Conference\",\r\n    \"total_seats\": 10,\r\n    \"event_date\": \"2026-12-25\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create event 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_name\": \"Workshop: Node.js\",\r\n    \"total_seats\": 5,\r\n    \"event_date\": \"2027-12-20\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create event 3",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_name\": \"Annual Conference\",\r\n    \"total_seats\": 20,\r\n    \"event_date\": \"2026-06-15\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create event 4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_name\": \"Tech Conference\",\r\n    \"total_seats\": 15,\r\n    \"event_date\": \"2027-12-25\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create event (duplicate)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_name\": \"Tech Conference\",\r\n    \"total_seats\": 15,\r\n    \"event_date\": \"2027-12-25\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create event (zero seats)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_name\": \"Tech Conference\",\r\n    \"total_seats\": 0,\r\n    \"event_date\": \"2027-12-25\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create event (past date)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_name\": \"Tech new1\",\r\n    \"total_seats\": 10,\r\n    \"event_date\": \"2026-06-10\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Events (all)",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Events (ascending)",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_name\": \"Tech new1\",\r\n    \"total_seats\": 10,\r\n    \"event_date\": \"2026-06-10\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events?sort=ascending",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ],
+          "query": [
+            {
+              "key": "sort",
+              "value": "ascending"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Events (descending)",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events?sort=descending",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ],
+          "query": [
+            {
+              "key": "sort",
+              "value": "descending"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Events (upcoming = true)",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events?upcoming=true",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ],
+          "query": [
+            {
+              "key": "upcoming",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Events (upcoming = false)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/events?upcoming=false",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ],
+          "query": [
+            {
+              "key": "upcoming",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Events (upcoming and ascending)",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/events?upcoming=true&sort=ascending",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ],
+          "query": [
+            {
+              "key": "upcoming",
+              "value": "true"
+            },
+            {
+              "key": "sort",
+              "value": "ascending"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Events (upcoming and descending)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/events?upcoming=true&sort=descending",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "events"
+          ],
+          "query": [
+            {
+              "key": "upcoming",
+              "value": "true"
+            },
+            {
+              "key": "sort",
+              "value": "descending"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register User 1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_id\": 1,\r\n    \"idempotency_key\": \"unique-key-123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/registration",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "registration"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register User 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_id\": 2,\r\n    \"idempotency_key\": \"key-event2-001\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/registration",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "registration"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register user (same event)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_id\": 2,\r\n    \"idempotency_key\": \"key-event2-002\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/registration",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "registration"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register User (duplicate request)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_id\": 2,\r\n    \"idempotency_key\": \"key-event2-001\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/registration",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "registration"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register User (Event Full)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_id\": 3,\r\n    \"idempotency_key\": \"key-event3-001\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/registration",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "registration"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete registration",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_id\": 3,\r\n    \"idempotency_key\": \"key-event3-001\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/registration/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "registration",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete registration (not exist)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_id\": 3,\r\n    \"idempotency_key\": \"key-event3-001\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/registration/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "registration",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
